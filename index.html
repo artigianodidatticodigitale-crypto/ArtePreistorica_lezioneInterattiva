@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="it">
+<head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260907-05-0068bad","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFLd8sKbwc,2","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAHO2VMiyZo,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAEul-FRQw4,0","Georgia":"YAGzXkO0pEM,0","Helvetica Neue":"YAFcf6CtJfI,0","Impact":"YAFcfnjI7Vk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Libre Baskerville":"YACgEUFdPdA,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YADLjI9qxTA,0","Nunito":"YACgEX8C5Gg,0","Oleo Script":"YACgEQQ14jI,0","Phantom Sans":"YAHO2E8Pb88,0","Playfair Display":"YACgEYmuCJE,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YADWjpfPmdk,0","Raleway":"YACgEVg3xZg,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Ubuntu":"YACgERDU--Q,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YADlN8CFZ8Q,0","ui-sans-serif":"YACkoN-xg4g,0"}}');</script><script src="/_sdk/9e99ecf74af2a081.telemetry_sdk.js" integrity="sha512-tZ7fmfTx2KpCLjXQnEuL9azQ4A5+7+xumsx6r/WYVD0zCP/8LP8hDeCypMQesmP+WyAew4g7l5Ah23Bjd6yoVg=="></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Arte Preistorica - Viaggio nel Paleolitico e Neolitico</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(135deg, #8B4513 0%, #D2691E 50%, #CD853F 100%);
+            min-height: 100vh;
+            color: #2C1810;
+            font-size: 1.6rem;
+            line-height: 1.8;
+        }
+        
+        .container {
+            max-width: 1920px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            background: rgba(255, 248, 220, 0.9);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            color: #8B4513;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .subtitle {
+            font-size: 1.3rem;
+            color: #A0522D;
+            font-style: italic;
+        }
+        
+        .section {
+            background: rgba(255, 248, 220, 0.95);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            font-size: 1.5rem;
+            line-height: 1.9;
+        }
+        
+        .section h2 {
+            color: #8B4513;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .timeline {
+            background: rgba(255, 248, 220, 0.95);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            font-size: 1.5rem;
+            line-height: 1.9;
+        }
+        
+        .timeline h2 {
+            color: #8B4513;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: rgba(210, 180, 140, 0.3);
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .timeline-item:hover {
+            transform: translateX(10px);
+        }
+        
+        .timeline-date {
+            background: #8B4513;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-weight: 600;
+            margin-right: 2rem;
+            min-width: 180px;
+            text-align: center;
+        }
+        
+        .caves-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 4rem;
+            margin-bottom: 2rem;
+        }
+        
+        .cave-card {
+            background: rgba(255, 248, 220, 0.95);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            font-size: 1.5rem;
+            line-height: 1.9;
+        }
+        
+        .cave-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+        }
+        
+        .cave-card h3 {
+            color: #8B4513;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .cave-icon {
+            font-size: 2rem;
+            margin-right: 0.5rem;
+        }
+        
+        .animals-section {
+            background: rgba(255, 248, 220, 0.95);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .animals-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+        
+        .animal-card {
+            background: rgba(210, 180, 140, 0.4);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .animal-card:hover {
+            background: rgba(210, 180, 140, 0.6);
+            transform: scale(1.05);
+        }
+        
+        .animal-emoji {
+            font-size: 3rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .techniques-section {
+            background: rgba(255, 248, 220, 0.95);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            margin-bottom: 2rem;
+        }
+        
+        .technique-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: rgba(210, 180, 140, 0.3);
+            border-radius: 10px;
+        }
+        
+        .technique-icon {
+            font-size: 2rem;
+            margin-right: 1rem;
+            width: 60px;
+            text-align: center;
+        }
+        
+        .interactive-cave {
+            background: linear-gradient(rgba(101, 67, 33, 0.7), rgba(139, 69, 19, 0.7)), url('https://www.artesvelata.it/wp-content/uploads/2021/01/La-Sala-dei-tori-15.000-a.C.-ca.-Dipinti-rupestri.-Grotta-di-Lascaux-Francia-arte-svelata-1536x949.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+            min-height: 300px;
+        }
+        
+        .cave-painting {
+            position: absolute;
+            transition: all 0.5s ease;
+            cursor: pointer;
+            font-size: 2rem;
+            opacity: 0.8;
+        }
+        
+        .cave-painting:hover {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+        
+        .cave-painting.bison {
+            top: 20%;
+            left: 15%;
+            color: #8B4513;
+        }
+        
+        .cave-painting.horse {
+            top: 40%;
+            right: 20%;
+            color: #A0522D;
+        }
+        
+        .cave-painting.deer {
+            bottom: 30%;
+            left: 30%;
+            color: #CD853F;
+        }
+        
+        .cave-painting.aurochs {
+            top: 60%;
+            right: 35%;
+            color: #654321;
+        }
+        
+        .cave-painting.rhino {
+            bottom: 20%;
+            right: 15%;
+            color: #8B4513;
+        }
+        
+        .cave-title {
+            color: #FFE4B5;
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .info-popup {
+            position: fixed;
+            top: 5vh;
+            left: 5vw;
+            width: 90vw;
+            height: 90vh;
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
+            overflow-y: auto;
+            display: none;
+            z-index: 1000;
+            font-size: 1.6rem;
+            line-height: 1.9;
+        }
+        
+        .fullscreen-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.95);
+            display: none;
+            z-index: 2000;
+            cursor: pointer;
+        }
+        
+        .fullscreen-image img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 95vw;
+            max-height: 95vh;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+        }
+        
+        .fullscreen-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 2001;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s ease;
+        }
+        
+        .fullscreen-close:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+        
+        .clickable-image {
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .clickable-image:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            z-index: 999;
+        }
+        
+        .close-btn {
+            background: #8B4513;
+            color: white;
+            border: none;
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+            float: right;
+            font-size: 1.5rem;
+            font-weight: bold;
+            transition: background 0.3s ease;
+            margin-bottom: 1rem;
+        }
+        
+        .close-btn:hover {
+            background: #654321;
+        }
+        
+        .venus-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+        
+        .venus-card {
+            background: rgba(210, 180, 140, 0.4);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .venus-card:hover {
+            background: rgba(210, 180, 140, 0.6);
+            transform: scale(1.05);
+        }
+        
+        .megalith-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 4rem;
+            margin-top: 2rem;
+        }
+        
+        .megalith-card {
+            background: rgba(210, 180, 140, 0.4);
+            padding: 2rem;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .megalith-card:hover {
+            background: rgba(210, 180, 140, 0.6);
+            transform: translateY(-5px);
+        }
+        
+        .stonehenge-section {
+            background: linear-gradient(135deg, #4A5568, #718096);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .stonehenge-section h2 {
+            color: #E2E8F0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .highlight {
+            background: rgba(255, 255, 0, 0.2);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+            
+            .timeline-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .timeline-date {
+                margin-bottom: 1rem;
+                margin-right: 0;
+            }
+            
+            .info-popup {
+                top: 2vh;
+                left: 2vw;
+                width: 96vw;
+                height: 96vh;
+                padding: 2rem;
+                font-size: 1rem;
+            }
+            
+            .close-btn {
+                padding: 0.8rem 1.2rem;
+                font-size: 1rem;
+            }
+        }
+    </style>
+<script src="/_sdk/fbe2ebfd64647c54.data_sdk.js" integrity="sha512-vkTX6CfvpHc3WbjK+tFJCaDuw4ERA4aEV/e5/7+MMJPMTF4RJYCI6CAwJBT/gtDW+dba4uLSsPUgDjVDHWtgUQ=="></script><script src="/_sdk/fcb6dc01f91829ac.resizing_sdk.js" integrity="sha512-YK8JfnN705qaEaVhiL7pcVB2Rs/BbdX5yxV55Az8zT/1JanyEWTw9HqCF915m9iV1YEaoil8qsjJz03l1Kb0Ug=="></script></head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏛️ L'Arte Preistorica</h1>
+            <p class="subtitle">Dal Paleolitico al Neolitico: 36.000 anni di evoluzione artistica</p>
+            <p style="margin-top: 1rem; font-size: 1.1rem; color: #8B4513; font-weight: 600;">Prof. Giacomo Campoli</p>
+        </div>
+        
+        <div class="timeline">
+            <h2>📅 Cronologia dell'Arte Preistorica</h2>
+            <div class="timeline-item">
+                <div class="timeline-date">35.000-25.000 a.C.</div>
+                <div>
+                    <strong>Veneri preistoriche:</strong> Statuine femminili simbolo di fertilità, realizzate in pietra, osso, avorio o steatite in tutta Europa.
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">36.000 anni fa</div>
+                <div>
+                    <strong>Paleolitico:</strong> Gli esseri umani iniziano a usare immagini con intenzionalità artistica. Non sappiamo esattamente come sia nata l'arte, ma le prime testimonianze mostrano una chiara volontà espressiva.
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">15.000-13.000 a.C.</div>
+                <div>
+                    <strong>Grotte di Lascaux:</strong> Pitture rupestri monumentali con animali di dimensioni straordinarie (fino a 5 metri) e tecniche pittoriche sofisticate.
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2800-1550 a.C.</div>
+                <div>
+                    <strong>Stonehenge:</strong> Costruzione del cromlech più famoso al mondo, possibile tempio solare e osservatorio astronomico.
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">VI-I millennio a.C.</div>
+                <div>
+                    <strong>Val Camonica:</strong> Incisioni rupestri che documentano il passaggio dal Paleolitico all'età del Ferro con scene di vita quotidiana.
+                </div>
+            </div>
+        </div>
+        
+        <div class="caves-section">
+            <div class="cave-card" onclick="showCaveInfo('lascaux')">
+                <h3><span class="cave-icon">🇫🇷</span> Grotte di Lascaux</h3>
+                <div class="cave-images">
+                    <img src="https://www.viaggiatoriignoranti.it/wp-content/uploads/2018/03/1ccca-3-1.jpg" alt="Pitture rupestri di Lascaux - Sala dei Tori" class="clickable-image" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;" onclick="openFullscreen(this)" onerror="this.style.display='none';">
+                    <img src="https://orsomarsoblues.it/wp-content/uploads/2020/12/las3.jpg" alt="Arte paleolitica nelle grotte di Lascaux" class="clickable-image" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;" onclick="openFullscreen(this)" onerror="this.style.display='none';">
+                </div>
+                <p><strong>Francia sud-occidentale, Montignac</strong></p>
+                <p>Patrimonio UNESCO dal 1979. Pitture datate tra 15.000 e 13.000 a.C. con animali di dimensioni monumentali fino a 5 metri e dettagli minuziosi di 50-60 cm.</p>
+            </div>
+            
+            <div class="cave-card" onclick="showCaveInfo('altamira')">
+                <h3><span class="cave-icon">🇪🇸</span> Grotte di Altamira</h3>
+                <div class="cave-images">
+                    <img src="https://www.analisidellopera.it/wp-content/uploads/2020/03/Altamira_bisonte.jpg" alt="Bisonte policromo di Altamira - Soffitto della grotta" class="clickable-image" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;" onclick="openFullscreen(this)" onerror="this.style.display='none';">
+                </div>
+                <p>In Spagna, Altamira è conosciuta come la "Cappella Sistina dell'arte preistorica" per la qualità eccezionale delle sue pitture rupestri policromatiche.</p>
+            </div>
+        </div>
+        
+        <div class="interactive-cave">
+            <div class="cave-title">🖼️ Grotta Interattiva - Clicca sui 5 animali paleolitici!</div>
+            <div class="cave-painting bison" onclick="showAnimalInfo('bison')">
+                <img src="https://www.analisidellopera.it/wp-content/uploads/2020/03/Altamira_bisonte.jpg" alt="Bisonte di Altamira - Pittura rupestre paleolitica" style="width: 100px; height: 70px; object-fit: cover; border-radius: 8px; border: 2px solid #8B4513;" onerror="this.style.display='none'; this.parentElement.innerHTML='🦬';">
+            </div>
+            <div class="cave-painting horse" onclick="showAnimalInfo('horse')">
+                <img src="https://analisidellopera.it/wp-content/uploads/2020/01/Lascaux_cavallo-1024x639.jpg" alt="Cavallo di Lascaux - Pittura rupestre paleolitica" style="width: 90px; height: 60px; object-fit: cover; border-radius: 8px; border: 2px solid #A0522D;" onerror="this.style.display='none'; this.parentElement.innerHTML='🐎';">
+            </div>
+            <div class="cave-painting deer" onclick="showAnimalInfo('deer')">
+                <img src="https://zoticone.wordpress.com/wp-content/uploads/2013/02/02_02_00_11.jpg" alt="Cervo di Lascaux - Pittura rupestre paleolitica" style="width: 80px; height: 60px; object-fit: cover; border-radius: 8px; border: 2px solid #CD853F;" onerror="this.style.display='none'; this.parentElement.innerHTML='🦌';">
+            </div>
+            <div class="cave-painting aurochs" onclick="showAnimalInfo('uri')">
+                <img src="https://www.artesvelata.it/wp-content/uploads/2021/01/Uri-38.000-34.000-a.C.-Dipinti-rupestri.-Grotta-Chauvet-Francia-arte-svelata.jpg" alt="Uri di Chauvet - Pittura rupestre paleolitica" style="width: 110px; height: 75px; object-fit: cover; border-radius: 8px; border: 2px solid #654321;" onerror="this.style.display='none'; this.parentElement.innerHTML='🐂';">
+            </div>
+            <div class="cave-painting rhino" onclick="showAnimalInfo('rhino')">
+                <img src="https://www.artesvelata.it/wp-content/uploads/2021/01/Rinoceronti-38.000-34.000-a.C.-Dipinti-rupestri.-Grotta-Chauvet-Francia-Regione-Rodano-Alpi-arte-svelata.jpg" alt="Rinoceronte di Chauvet - Pittura rupestre paleolitica" style="width: 95px; height: 65px; object-fit: cover; border-radius: 8px; border: 2px solid #8B4513;" onerror="this.style.display='none'; this.parentElement.innerHTML='🦏';">
+            </div>
+        </div>
+        
+        <div class="animals-section">
+            <h2>🦣 Animali dell'Arte Paleolitica</h2>
+            <p>I temi principali delle pitture rupestri erano gli animali, rappresentati con straordinario naturalismo:</p>
+            
+            <div class="animals-grid">
+                <div class="animal-card" onclick="showAnimalInfo('bison')">
+                    <span class="animal-emoji">🦬</span>
+                    <strong>Bisonti</strong>
+                    <p>Animali possenti, spesso rappresentati in movimento</p>
+                </div>
+                
+                <div class="animal-card" onclick="showAnimalInfo('horse')">
+                    <span class="animal-emoji">🐎</span>
+                    <strong>Cavalli</strong>
+                    <p>Eleganti profili con dettagli anatomici precisi</p>
+                </div>
+                
+                <div class="animal-card" onclick="showAnimalInfo('deer')">
+                    <span class="animal-emoji">🦌</span>
+                    <strong>Cervi</strong>
+                    <p>Rappresentati con corna elaborate e posture naturali</p>
+                </div>
+                
+                <div class="animal-card" onclick="showAnimalInfo('uri')">
+                    <span class="animal-emoji">🐂</span>
+                    <strong>Uri</strong>
+                    <p>Antenati dei bovini moderni, ora estinti</p>
+                </div>
+                
+                <div class="animal-card" onclick="showAnimalInfo('rhino')">
+                    <span class="animal-emoji">🦏</span>
+                    <strong>Rinoceronti</strong>
+                    <p>Rappresentati con grande attenzione ai dettagli</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="techniques-section">
+            <h2>🎨 Tecniche Pittoriche Primitive</h2>
+            <p style="text-align: center; margin-bottom: 2rem; font-style: italic;">Come venivano create le pitture rupestri?</p>
+            
+            <div class="technique-item">
+                <div class="technique-icon">🎨</div>
+                <div>
+                    <strong>Colori naturali:</strong> <span class="highlight">Ocra rossa e gialla, carbone, manganese, gesso</span> - pigmenti estratti dalla natura e lavorati per ottenere diverse tonalità.
+                </div>
+            </div>
+            
+            <div class="technique-item">
+                <div class="technique-icon">🧪</div>
+                <div>
+                    <strong>Agglomeranti organici:</strong> <span class="highlight">Grasso animale, sangue, albume d'uovo</span> - sostanze che permettevano ai pigmenti di aderire alla roccia e durare nel tempo.
+                </div>
+            </div>
+            
+            <div class="technique-item">
+                <div class="technique-icon">✋</div>
+                <div>
+                    <strong>Strumenti di applicazione:</strong> <span class="highlight">Dita, pennelli rudimentali, tamponi</span> per stendere il colore e <span class="highlight">spruzzatura con canne o ossa cave</span> per effetti particolari.
+                </div>
+            </div>
+            
+            <div class="technique-item">
+                <div class="technique-icon">🏔️</div>
+                <div>
+                    <strong>Uso delle irregolarità della roccia:</strong> Gli artisti sfruttavano le gobbe e le depressioni naturali della parete per dare volume tridimensionale alle figure.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>🔮 Il Significato Rituale</h2>
+            <p style="text-align: center; margin-bottom: 2rem; font-style: italic;">Perché dipingere in grotte remote e inaccessibili?</p>
+            
+            <div class="technique-item">
+                <div class="technique-icon">🙏</div>
+                <div>
+                    <strong>Riti propiziatori:</strong> L'ipotesi più accreditata è che le pitture avessero funzione magico-religiosa per favorire la caccia e la sopravvivenza del gruppo.
+                </div>
+            </div>
+            
+            <div class="technique-item">
+                <div class="technique-icon">⛪</div>
+                <div>
+                    <strong>Santuari sacri:</strong> Le grotte erano luoghi di culto, non abitazioni. La loro posizione remota le rendeva spazi sacri separati dalla vita quotidiana.
+                </div>
+            </div>
+            
+            <div class="technique-item">
+                <div class="technique-icon">✨</div>
+                <div>
+                    <strong>Possesso magico:</strong> Disegnare un animale significava <span class="highlight">possederlo magicamente</span>, acquisire potere su di esso attraverso la rappresentazione.
+                </div>
+            </div>
+            
+            <div class="technique-item">
+                <div class="technique-icon">🎯</div>
+                <div>
+                    <strong>Simulazione della caccia:</strong> <span class="highlight">Colpire il dipinto equivaleva a uccidere l'animale vero</span> - una pratica rituale preparatoria alla caccia reale.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>👸 Scultura nel Paleolitico - Le Veneri Preistoriche</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">Statuine femminili simbolo di fertilità (35.000-25.000 a.C.)</p>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-bottom: 2rem;">
+                <div style="text-align: center;">
+                    <img src="https://www.analisidellopera.it/wp-content/uploads/2020/03/Venere_di_Willendorf.jpg" alt="Venere di Willendorf - Statuina paleolitica simbolo di fertilità" class="clickable-image" style="width: 100%; max-width: 400px; height: 500px; object-fit: cover; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.2);" onclick="openFullscreen(this)" onerror="this.style.display='none';">
+                    <p style="font-style: italic; color: #8B4513; margin-top: 0.5rem; font-size: 0.9rem;"><strong>25.000 a.C.</strong><br>Venere di Willendorf (Austria) - Statuina paleolitica simbolo di fertilità</p>
+                </div>
+                
+                <div style="text-align: center;">
+                    <img src="https://eppuresonoinviaggio.it/wp-content/uploads/2018/02/mostra-botero-0.jpg" alt="Fernando Botero - Donna seduta, 1997. Pittura contemporanea che richiama la rotondità delle Veneri preistoriche" class="clickable-image" style="width: 100%; max-width: 400px; height: 500px; object-fit: cover; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.2);" onclick="openFullscreen(this)" onerror="this.style.display='none';">
+                    <p style="font-style: italic; color: #8B4513; margin-top: 0.5rem; font-size: 0.9rem;"><strong>1997 d.C.</strong><br>Fernando Botero - "Donna seduta" - Pittura contemporanea</p>
+                </div>
+            </div>
+            
+            <div style="background: rgba(255, 215, 0, 0.2); padding: 1.5rem; border-radius: 12px; border-left: 5px solid #FFD700; margin-bottom: 2rem;">
+                <h4 style="color: #B8860B; margin-bottom: 1rem; text-align: center;">🎭 Straordinaria Continuità: 27.000 anni di Rotondità Femminile!</h4>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; text-align: center;">
+                    <div>
+                        <strong>Venere Paleolitica</strong><br>
+                        • Forme abbondanti e rotonde<br>
+                        • Simbolo di fertilità e maternità<br>
+                        • Enfasi su seni, fianchi, glutei<br>
+                        • Arte rituale e sacra
+                    </div>
+                    <div>
+                        <strong>Botero Contemporaneo</strong><br>
+                        • Volumi generosi e sensuali<br>
+                        • Celebrazione della femminilità<br>
+                        • Rotondità come bellezza<br>
+                        • Arte moderna e pop
+                    </div>
+                </div>
+                <p style="text-align: center; margin-top: 1rem; font-style: italic;">
+                    <strong>Incredibile parallelismo:</strong> Dall'Austria preistorica alla Colombia moderna, l'arte continua a celebrare la rotondità femminile come simbolo di vita, fertilità e bellezza. Botero riscopre inconsciamente l'estetica delle Veneri paleolitiche!
+                </p>
+            </div>
+            
+            <div class="venus-grid">
+                <div class="venus-card" onclick="showVenusInfo('characteristics')">
+                    <span class="animal-emoji">🗿</span>
+                    <strong>Caratteristiche</strong>
+                    <p>Alte 10-15 cm, realizzate in pietra, osso, avorio o steatite</p>
+                </div>
+                
+                <div class="venus-card" onclick="showVenusInfo('symbolism')">
+                    <span class="animal-emoji">🤱</span>
+                    <strong>Simbolismo</strong>
+                    <p>Non ritratti realistici, ma simboli della donna-madre e della fertilità</p>
+                </div>
+                
+                <div class="venus-card" onclick="showVenusInfo('distribution')">
+                    <span class="animal-emoji">🌍</span>
+                    <strong>Diffusione</strong>
+                    <p>Trovate in tutta Europa, da Francia a Russia, testimonianza di credenze comuni</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>🎭 Arte nel Neolitico - Dalla Naturalità alla Stilizzazione</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">L'evoluzione artistica verso l'astrazione</p>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-bottom: 2rem;">
+                <div style="text-align: center;">
+                    <img src="https://www.artesvelata.it/wp-content/uploads/2021/09/Figure-umane-danzanti-oppure-oranti-arte-svelata.jpg" alt="Figure umane stilizzate danzanti o oranti - Arte rupestre neolitica" class="clickable-image" style="width: 100%; height: 400px; object-fit: cover; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.2);" onclick="openFullscreen(this)" onerror="this.style.display='none';">
+                    <p style="font-style: italic; color: #8B4513; margin-top: 0.5rem; font-size: 0.9rem;"><strong>NEOLITICO</strong><br>Figure umane stilizzate - Possibili danzatori o figure in preghiera</p>
+                </div>
+                
+                <div style="text-align: center;">
+                    <img src="https://static.bakeca.it/immagini/4e8/4e8720039cc227355aff82d17909dfj4.jpg" alt="Keith Haring - Figure danzanti contemporanee, street art moderna" class="clickable-image" style="width: 100%; height: 400px; object-fit: cover; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.2);" onclick="openFullscreen(this)" onerror="this.style.display='none';">
+                    <p style="font-style: italic; color: #8B4513; margin-top: 0.5rem; font-size: 0.9rem;"><strong>XX SECOLO</strong><br>Keith Haring - Figure danzanti nella street art contemporanea</p>
+                </div>
+            </div>
+            
+            <div style="background: rgba(255, 215, 0, 0.2); padding: 1.5rem; border-radius: 12px; border-left: 5px solid #FFD700; margin-bottom: 2rem;">
+                <h4 style="color: #B8860B; margin-bottom: 1rem; text-align: center;">🎭 Confronto Straordinario: 8.000 anni di distanza, stessa espressività!</h4>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; text-align: center;">
+                    <div>
+                        <strong>Arte Neolitica</strong><br>
+                        • Figure filiformi essenziali<br>
+                        • Movimento e danza<br>
+                        • Riduzione a segni puri<br>
+                        • Arte rupestre su roccia
+                    </div>
+                    <div>
+                        <strong>Keith Haring (1958-1990)</strong><br>
+                        • Figure stilizzate moderne<br>
+                        • Energia e dinamismo<br>
+                        • Linguaggio universale<br>
+                        • Street art su muri urbani
+                    </div>
+                </div>
+                <p style="text-align: center; margin-top: 1rem; font-style: italic;">
+                    <strong>Incredibile continuità:</strong> L'impulso umano di ridurre la figura a pochi tratti essenziali per esprimere movimento ed emozione attraversa i millenni!
+                </p>
+            </div>
+            
+            <div class="technique-item">
+                <div class="technique-icon">📐</div>
+                <div>
+                    <strong>Semplificazione delle forme:</strong> Le figure realistiche del Paleolitico lasciano spazio alla <span class="highlight">riduzione dei corpi a pochi segni essenziali</span>.
+                </div>
+            </div>
+            
+            <div class="technique-item">
+                <div class="technique-icon">🎨</div>
+                <div>
+                    <strong>Nascita della stilizzazione:</strong> L'arte non copia più la realtà ma la <span class="highlight">interpreta attraverso simboli e schemi geometrici</span>.
+                </div>
+            </div>
+            
+            <div class="technique-item">
+                <div class="technique-icon">🧠</div>
+                <div>
+                    <strong>Arte concettuale:</strong> Prevale l'idea e il significato simbolico rispetto alla rappresentazione fedele dell'aspetto visivo.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>🏔️ I Graffiti della Val Camonica</h2>
+            <p style="text-align: center; margin-bottom: 2rem;"><strong>Lombardia, Italia</strong> - Zona archeologica patrimonio UNESCO</p>
+            
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <img src="https://www.artesvelata.it/wp-content/uploads/2021/09/Cervi-3200-2500-a.C.-Graffito-rupestre.-Masso-di-Cemmo-in-Val-Camonica-arte-svelata.jpg" alt="Cervi incisi - Graffito rupestre del Masso di Cemmo, Val Camonica (3200-2500 a.C.)" class="clickable-image" style="width: 100%; max-width: 600px; height: 400px; object-fit: cover; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.2);" onclick="openFullscreen(this)" onerror="this.style.display='none';">
+                <p style="font-style: italic; color: #8B4513; margin-top: 0.5rem; font-size: 0.9rem;">Rappresentazione di cervi - Masso di Cemmo, Val Camonica (3200-2500 a.C.)</p>
+            </div>
+            
+            <div class="technique-item">
+                <div class="technique-icon">⏰</div>
+                <div>
+                    <strong>Cronologia:</strong> Incisioni su roccia dal <span class="highlight">VI al I millennio a.C.</span> - un archivio di 8.000 anni di storia.
+                </div>
+            </div>
+            
+            <div class="technique-item">
+                <div class="technique-icon">🔨</div>
+                <div>
+                    <strong>Tecnica della martellina:</strong> <span class="highlight">Contorni tracciati con martellina + scalpello</span> per incidere la roccia con precisione.
+                </div>
+            </div>
+            
+            <div class="technique-item">
+                <div class="technique-icon">👥</div>
+                <div>
+                    <strong>Temi rappresentati:</strong> <span class="highlight">Uomini filiformi, armi, animali, scene di caccia e agricoltura</span> - la vita quotidiana dell'epoca.
+                </div>
+            </div>
+            
+            <div class="technique-item" onclick="showCarroInfo()">
+                <div class="technique-icon">🛞</div>
+                <div style="cursor: pointer;">
+                    <strong>Il Carro di Naquane:</strong> Graffito famoso della Roccia 23 - <span class="highlight">veicolo a quattro ruote trainato da cavalli</span> con visione multi-prospettica. <em>(Clicca per saperne di più)</em>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>🗿 Architettura Megalitica</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">Monumenti in pietra del Neolitico - "Megaliti" = Grandi Pietre</p>
+            
+            <div class="megalith-grid">
+                <div class="megalith-card" onclick="showMegalithInfo('menhir')">
+                    <h3>🗿 Menhir</h3>
+                    <p><strong>Pietra verticale</strong></p>
+                    <p>Monoliti eretti, spesso allineati, con possibile funzione astronomica o commemorativa.</p>
+                </div>
+                
+                <div class="megalith-card" onclick="showMegalithInfo('dolmen')">
+                    <h3>⚰️ Dolmen</h3>
+                    <p><strong>Tomba a tavola di pietra</strong></p>
+                    <p>Strutture funerarie con lastre orizzontali su pilastri verticali. Es: Dolmen di Bisceglie (Puglia).</p>
+                </div>
+                
+                <div class="megalith-card" onclick="showMegalithInfo('cromlech')">
+                    <h3>⭕ Cromlech</h3>
+                    <p><strong>Cerchio di pietre</strong></p>
+                    <p>Cerchi di menhir, probabilmente luoghi di culto o osservatori astronomici.</p>
+                </div>
+            </div>
+            
+            <div class="section" style="background: rgba(139, 69, 19, 0.1); border: 2px solid #8B4513; margin-top: 2rem;">
+                <h3 style="color: #8B4513; text-align: center; margin-bottom: 1.5rem;">🏗️ Il Sistema Trilitico - Innovazione Architettonica Neolitica</h3>
+                
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <img src="https://i.ytimg.com/vi/Dz3jcBMB2bM/maxresdefault.jpg" alt="Sistema trilitico - Struttura architettonica megalitica con due pilastri verticali e architrave orizzontale" class="clickable-image" style="width: 100%; max-width: 600px; height: 350px; object-fit: cover; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.2);" onclick="openFullscreen(this)" onerror="this.style.display='none';">
+                    <p style="font-style: italic; color: #8B4513; margin-top: 0.5rem; font-size: 0.9rem;">Schema del sistema trilitico - La base dell'architettura megalitica</p>
+                </div>
+                
+                <div class="technique-item" style="background: rgba(255, 248, 220, 0.8);">
+                    <div class="technique-icon">🏛️</div>
+                    <div>
+                        <strong>Definizione:</strong> <span class="highlight">Trilite = tre pietre</span> - Due pilastri verticali (ortostati) + una lastra orizzontale (architrave) = struttura architettonica elementare ma geniale.
+                    </div>
+                </div>
+                
+                <div class="technique-item" style="background: rgba(255, 248, 220, 0.8);">
+                    <div class="technique-icon">⚖️</div>
+                    <div>
+                        <strong>Principio statico:</strong> Il peso dell'architrave viene <span class="highlight">distribuito sui due pilastri verticali</span>, creando una struttura stabile che può sostenere carichi enormi.
+                    </div>
+                </div>
+                
+                <div class="technique-item" style="background: rgba(255, 248, 220, 0.8);">
+                    <div class="technique-icon">🔧</div>
+                    <div>
+                        <strong>Applicazioni:</strong> Utilizzato nei <span class="highlight">dolmen (tombe), cromlech (Stonehenge), templi</span> - base dell'architettura monumentale fino ai templi greci!
+                    </div>
+                </div>
+                
+                <div class="technique-item" style="background: rgba(255, 248, 220, 0.8);">
+                    <div class="technique-icon">🎯</div>
+                    <div>
+                        <strong>Genialità neolitica:</strong> <span class="highlight">Primo sistema costruttivo razionale della storia</span> - permette di creare spazi coperti con materiali pesantissimi usando solo la forza di gravità.
+                    </div>
+                </div>
+                
+                <div style="background: rgba(255, 215, 0, 0.2); padding: 1.5rem; border-radius: 12px; border-left: 5px solid #FFD700; margin-top: 1.5rem;">
+                    <h4 style="color: #B8860B; margin-bottom: 1rem; text-align: center;">🏛️ Dal Neolitico all'Architettura Classica</h4>
+                    <p style="text-align: center; font-style: italic;">
+                        <strong>Incredibile continuità:</strong> Il sistema trilitico inventato nel Neolitico (5000 a.C.) diventerà la base dell'architettura greca e romana! I templi del Partenone utilizzano lo stesso principio strutturale di Stonehenge, perfezionato nei millenni.
+                    </p>
+                    
+                    <div style="text-align: center; margin-top: 1.5rem; padding: 1rem; background: rgba(139, 69, 19, 0.1); border-radius: 8px;">
+                        <h5 style="color: #8B4513; margin-bottom: 1rem;">🎧 Approfondimento Audio</h5>
+                        <a href="https://app.briskteaching.com/student_podcast/w8m4twdyk6" target="_blank" style="display: inline-block; background: #8B4513; color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);" onmouseover="this.style.background='#654321'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#8B4513'; this.style.transform='translateY(0)'">
+                            🎙️ Ascolta il podcast sul Sistema Trilitico →
+                        </a>
+                        <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #8B4513; font-style: italic;">
+                            Approfondimento audio dedicato all'evoluzione del sistema trilitico
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 2rem; padding: 1rem; background: rgba(210, 180, 140, 0.3); border-radius: 10px;">
+                <strong>💪 Sforzo Collettivo Enorme:</strong> Questi monumenti richiedevano la collaborazione di intere comunità per trasportare e posizionare blocchi di pietra del peso di tonnellate.
+            </div>
+        </div>
+        
+        <div class="stonehenge-section">
+            <h2>🏴󠁧󠁢󠁥󠁮󠁧󠁿 Stonehenge - Il Cromlech più Famoso</h2>
+            <p style="text-align: center; margin-bottom: 2rem;"><strong>Inghilterra, presso Salisbury</strong> - Patrimonio UNESCO dal 1986</p>
+            
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <img src="https://www.artesvelata.it/wp-content/uploads/2021/05/Cromlech-di-Stonehenge-2500-1300-a.C.-Wiltshire-arte-svelata.jpg" alt="Cromlech di Stonehenge - Monumento megalitico del Neolitico (2500-1300 a.C.), Wiltshire, Inghilterra" class="clickable-image" style="width: 100%; max-width: 700px; height: 400px; object-fit: cover; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.3);" onclick="openFullscreen(this)" onerror="this.style.display='none';">
+                <p style="font-style: italic; color: #E2E8F0; margin-top: 0.5rem; font-size: 0.9rem;">Stonehenge - Il cromlech più famoso al mondo (2500-1300 a.C.)</p>
+                
+
+                
+                <div style="margin-top: 1rem;">
+                    <a href="https://www.artesvelata.it/wp-content/uploads/2021/05/Cromlech-di-Stonehenge-2500-1300-a.C.-Wiltshire-arte-svelata.jpg" target="_blank" style="display: inline-block; background: rgba(255, 255, 255, 0.2); color: #E2E8F0; padding: 0.8rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s ease; border: 2px solid rgba(255, 255, 255, 0.3);" onmouseover="this.style.background='rgba(255, 255, 255, 0.3)'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.2)'; this.style.transform='translateY(0)'">
+                        🔍 Vedi immagine dettagliata di Stonehenge →
+                    </a>
+                </div>
+            </div>
+            
+            <div class="technique-item" style="background: rgba(255, 255, 255, 0.1);">
+                <div class="technique-icon">📅</div>
+                <div style="color: white;">
+                    <strong>Costruzione:</strong> Edificato tra <span class="highlight">2800 e 1550 a.C.</span> in diverse fasi costruttive che si sono susseguite per oltre un millennio.
+                </div>
+            </div>
+            
+            <div class="technique-item" style="background: rgba(255, 255, 255, 0.1);">
+                <div class="technique-icon">🏗️</div>
+                <div style="color: white;">
+                    <strong>Struttura complessa:</strong> <span class="highlight">Cerchio esterno di arenaria</span> e <span class="highlight">ferro di cavallo interno di dolerite</span> - architettura sofisticata.
+                </div>
+            </div>
+            
+            <div class="technique-item" style="background: rgba(255, 255, 255, 0.1);">
+                <div class="technique-icon">🚚</div>
+                <div style="color: white;">
+                    <strong>Trasporto incredibile:</strong> Pietre da <span class="highlight">30 km di distanza</span> e alcune dal Galles a <span class="highlight">240 km</span>! Un'impresa logistica straordinaria.
+                </div>
+            </div>
+            
+            <div style="margin-top: 2rem;">
+                <h3 style="color: #E2E8F0; text-align: center; margin-bottom: 1rem;">🔍 Funzioni di Stonehenge - Ipotesi Principali:</h3>
+                
+                <div class="technique-item" style="background: rgba(255, 255, 255, 0.1);" onclick="showStonehengeInfo('temple')">
+                    <div class="technique-icon">☀️</div>
+                    <div style="color: white; cursor: pointer;">
+                        <strong>Tempio solare:</strong> L'asse è orientato verso <span class="highlight">l'alba del solstizio d'estate</span> - calendario solare monumentale.
+                    </div>
+                </div>
+                
+                <div class="technique-item" style="background: rgba(255, 255, 255, 0.1);" onclick="showStonehengeInfo('observatory')">
+                    <div class="technique-icon">🔭</div>
+                    <div style="color: white; cursor: pointer;">
+                        <strong>Osservatorio astronomico:</strong> Potrebbe prevedere eclissi e movimenti celesti con precisione scientifica.
+                    </div>
+                </div>
+                
+                <div class="technique-item" style="background: rgba(255, 255, 255, 0.1);" onclick="showStonehengeInfo('calendar')">
+                    <div class="technique-icon">🌙</div>
+                    <div style="color: white; cursor: pointer;">
+                        <strong>Calendario lunare:</strong> <span class="highlight">29+1 pietre = ciclo lunare di 29 giorni</span> - computer preistorico per calcoli temporali.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section" style="background: linear-gradient(135deg, #2D3748, #4A5568); color: white; border: 3px solid #E2E8F0;">
+            <h2 style="color: #E2E8F0; margin-bottom: 2rem;">📚 Per Approfondire</h2>
+            <p style="text-align: center; margin-bottom: 2rem; font-style: italic; color: #CBD5E0;">
+                Scopri di più sull'arte preistorica con questi articoli specializzati dal blog <strong>"Arte Svelata"</strong>
+            </p>
+            
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 4rem;">
+                <div style="background: rgba(255, 255, 255, 0.1); padding: 1.5rem; border-radius: 12px; transition: all 0.3s ease; cursor: pointer;" onclick="window.open('https://www.artesvelata.it/arte-preistoria-paleolitico/', '_blank')" onmouseover="this.style.background='rgba(255, 255, 255, 0.2)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.1)'">
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <span style="font-size: 2rem; margin-right: 1rem;">🦣</span>
+                        <h3 style="color: #E2E8F0; margin: 0;">Arte del Paleolitico</h3>
+                    </div>
+                    <p style="color: #CBD5E0; margin-bottom: 1rem;">
+                        Approfondimento completo sull'arte paleolitica: dalle prime manifestazioni artistiche alle grotte di Lascaux e Altamira.
+                    </p>
+                    <div style="color: #90CDF4; font-weight: 600; display: flex; align-items: center;">
+                        Leggi l'articolo <span style="margin-left: 0.5rem;">→</span>
+                    </div>
+                </div>
+                
+                <div style="background: rgba(255, 255, 255, 0.1); padding: 1.5rem; border-radius: 12px; transition: all 0.3s ease; cursor: pointer;" onclick="window.open('https://www.artesvelata.it/arte-neolitico/', '_blank')" onmouseover="this.style.background='rgba(255, 255, 255, 0.2)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.1)'">
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <span style="font-size: 2rem; margin-right: 1rem;">🏺</span>
+                        <h3 style="color: #E2E8F0; margin: 0;">Arte del Neolitico</h3>
+                    </div>
+                    <p style="color: #CBD5E0; margin-bottom: 1rem;">
+                        L'evoluzione artistica nel Neolitico: dalla stilizzazione delle forme alla nascita dell'architettura megalitica.
+                    </p>
+                    <div style="color: #90CDF4; font-weight: 600; display: flex; align-items: center;">
+                        Leggi l'articolo <span style="margin-left: 0.5rem;">→</span>
+                    </div>
+                </div>
+                
+                <div style="background: rgba(255, 255, 255, 0.1); padding: 1.5rem; border-radius: 12px; transition: all 0.3s ease; cursor: pointer;" onclick="window.open('https://www.artesvelata.it/stonehenge-architettura-megalitica/', '_blank')" onmouseover="this.style.background='rgba(255, 255, 255, 0.2)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.1)'">
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <span style="font-size: 2rem; margin-right: 1rem;">🗿</span>
+                        <h3 style="color: #E2E8F0; margin: 0;">Stonehenge e i Megaliti</h3>
+                    </div>
+                    <p style="color: #CBD5E0; margin-bottom: 1rem;">
+                        Studio dettagliato di Stonehenge e dell'architettura megalitica: costruzione, significato e misteri ancora irrisolti.
+                    </p>
+                    <div style="color: #90CDF4; font-weight: 600; display: flex; align-items: center;">
+                        Leggi l'articolo <span style="margin-left: 0.5rem;">→</span>
+                    </div>
+                </div>
+                
+                <div style="background: rgba(255, 255, 255, 0.1); padding: 1.5rem; border-radius: 12px; transition: all 0.3s ease; cursor: pointer;" onclick="window.open('https://www.artesvelata.it/graffiti-haring/', '_blank')" onmouseover="this.style.background='rgba(255, 255, 255, 0.2)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.1)'">
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <span style="font-size: 2rem; margin-right: 1rem;">🎭</span>
+                        <h3 style="color: #E2E8F0; margin: 0;">Haring e l'Arte Preistorica</h3>
+                    </div>
+                    <p style="color: #CBD5E0; margin-bottom: 1rem;">
+                        Il parallelo straordinario tra i graffiti di Keith Haring e l'arte rupestre neolitica: 8.000 anni di continuità espressiva.
+                    </p>
+                    <div style="color: #90CDF4; font-weight: 600; display: flex; align-items: center;">
+                        Leggi l'articolo <span style="margin-left: 0.5rem;">→</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 2rem; padding: 1rem; background: rgba(255, 255, 255, 0.05); border-radius: 8px;">
+                <p style="color: #CBD5E0; margin: 0; font-size: 0.9rem;">
+                    <strong>Arte Svelata</strong> - Blog specializzato in storia dell'arte con analisi approfondite e immagini di alta qualità
+                </p>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="overlay" onclick="closePopup()"></div>
+    <div class="info-popup" id="popup">
+        <button class="close-btn" onclick="closePopup()">✕</button>
+        <div id="popup-content"></div>
+    </div>
+    
+    <div class="fullscreen-image" id="fullscreen-viewer" onclick="closeFullscreen()">
+        <div class="fullscreen-close" onclick="closeFullscreen()">×</div>
+        <img id="fullscreen-img" src="" alt="">
+    </div>
+    
+    <script>
+        const animalInfo = {
+            bison: {
+                title: "🦬 Il Bisonte",
+                image: "https://www.analisidellopera.it/wp-content/uploads/2020/03/Altamira_bisonte.jpg",
+                content: "I bisonti erano tra gli animali più rappresentati nell'arte paleolitica. Questi possenti mammiferi erano una fonte importante di cibo, pelli e ossa per gli uomini preistorici. Nelle pitture rupestri, i bisonti sono spesso raffigurati in movimento, con particolare attenzione alla loro massa muscolare e alla caratteristica gobba sul dorso. A Lascaux, alcuni bisonti raggiungono dimensioni monumentali di 5 metri!"
+            },
+            horse: {
+                title: "🐎 Il Cavallo",
+                image: "https://analisidellopera.it/wp-content/uploads/2020/01/Lascaux_cavallo-1024x639.jpg",
+                content: "I cavalli preistorici erano più piccoli di quelli moderni ma ugualmente eleganti. Gli artisti paleolitici li rappresentavano con profili perfetti, catturando la loro grazia naturale. Le criniere e le code erano spesso dettagliate con grande precisione, mostrando la capacità di osservazione degli antichi artisti. Nelle grotte di Lascaux, i cavalli sono dipinti con tecniche sofisticate che sfruttano le irregolarità della roccia."
+            },
+            deer: {
+                title: "🦌 Il Cervo",
+                image: "https://zoticone.wordpress.com/wp-content/uploads/2013/02/02_02_00_11.jpg",
+                content: "I cervi erano rappresentati con particolare attenzione alle loro corna ramificate. Questi animali simboleggiavano spesso la velocità e l'agilità. Gli artisti preistorici riuscivano a catturare diverse posture: cervi in corsa, al pascolo o in atteggiamento di allerta. La loro rappresentazione naturalistica dimostra l'eccezionale capacità di osservazione degli artisti del Paleolitico."
+            },
+            uri: {
+                title: "🐂 L'Uro",
+                image: "https://www.artesvelata.it/wp-content/uploads/2021/01/Uri-38.000-34.000-a.C.-Dipinti-rupestri.-Grotta-Chauvet-Francia-arte-svelata.jpg",
+                content: "Gli uri erano i giganteschi antenati dei bovini moderni, ora completamente estinti. Potevano raggiungere i 2 metri di altezza al garrese. Nelle pitture rupestri sono rappresentati come animali imponenti e pericolosi, con corna enormi e corporatura massiccia. L'ultimo uro è morto in Polonia nel 1627, ma le pitture preistoriche ci permettono di conoscere questi magnifici animali."
+            },
+            rhino: {
+                title: "🦏 Il Rinoceronte Lanoso",
+                image: "https://www.artesvelata.it/wp-content/uploads/2021/01/Rinoceronti-38.000-34.000-a.C.-Dipinti-rupestri.-Grotta-Chauvet-Francia-Regione-Rodano-Alpi-arte-svelata.jpg",
+                content: "I rinoceronti lanosi vivevano in Europa durante l'Era Glaciale. Erano ricoperti di pelo folto per sopravvivere al freddo. Gli artisti preistorici li rappresentavano con grande realismo, catturando la loro caratteristica forma massiccia e il corno prominente. Questi animali si estinsero circa 10.000 anni fa, ma le pitture rupestri testimoniano la loro presenza nel paesaggio preistorico."
+            }
+        };
+        
+        const caveInfo = {
+            lascaux: {
+                title: "🇫🇷 Grotte di Lascaux, Francia",
+                content: `<strong>Localizzazione:</strong> Francia sud-occidentale, presso Montignac<br><br>
+                <strong>Patrimonio UNESCO:</strong> Dal 1979<br><br>
+                <strong>Datazione:</strong> Pitture create tra 15.000 e 13.000 a.C.<br><br>
+                <strong>Caratteristiche straordinarie:</strong><br>
+                • Animali di dimensioni monumentali fino a 5 metri<br>
+                • Dettagli minuziosi di figure più piccole (50-60 cm)<br>
+                • Oltre 600 pitture parietali<br>
+                • La famosa 'Sala dei Tori' con rappresentazioni di uri, cavalli, cervi e bisonti<br><br>
+                <strong>Tecniche avanzate:</strong> Uso sofisticato del colore, della prospettiva e sfruttamento delle irregolarità naturali della roccia per creare effetti tridimensionali. Le pitture dimostrano l'elevato livello artistico raggiunto dagli uomini del Paleolitico.`
+            },
+            altamira: {
+                title: "🇪🇸 Grotte di Altamira, Spagna",
+                content: `<strong>Scoperta:</strong> 1868<br><br>
+                <strong>Soprannome:</strong> "Cappella Sistina dell'arte preistorica"<br><br>
+                <strong>Datazione:</strong> Pitture create tra 22.000 e 13.000 anni fa<br><br>
+                <strong>Caratteristiche uniche:</strong><br>
+                • Famoso 'soffitto dei bisonti policromi'<br>
+                • Uso di pigmenti rossi, neri e ocra per effetti tridimensionali<br>
+                • Sfruttamento magistrale delle irregolarità naturali della roccia<br><br>
+                <strong>Importanza storica:</strong> Altamira fu una delle prime grotte con arte rupestre ad essere riconosciuta dalla comunità scientifica, rivoluzionando la comprensione delle capacità artistiche dei nostri antenati preistorici.`
+            }
+        };
+        
+        const venusInfo = {
+            characteristics: {
+                title: "🗿 Caratteristiche delle Veneri",
+                content: `<strong>Dimensioni:</strong> Statuine alte 10-15 cm, facilmente trasportabili<br><br>
+                <strong>Materiali:</strong><br>
+                • Pietra (calcare, steatite)<br>
+                • Osso di mammut<br>
+                • Avorio<br>
+                • Steatite (pietra saponaria)<br><br>
+                <strong>Caratteristiche fisiche:</strong><br>
+                • Seni, fianchi e glutei molto pronunciati<br>
+                • Volto spesso non definito o coperto<br>
+                • Enfasi sugli attributi legati alla maternità<br>
+                • Dettagli anatomici stilizzati ma riconoscibili`
+            },
+            symbolism: {
+                title: "🤱 Simbolismo e Significato",
+                content: `<strong>Non sono ritratti:</strong> Le Veneri non rappresentano donne specifiche ma incarnano concetti universali<br><br>
+                <strong>Simboli della fertilità:</strong><br>
+                • Rappresentano la capacità generativa femminile<br>
+                • Simboleggiano l'abbondanza e la continuità della specie<br>
+                • Possibili amuleti per favorire la gravidanza<br><br>
+                <strong>Donna-madre:</strong> Incarnano l'archetipo della Grande Madre, figura centrale nelle società preistoriche per la sopravvivenza del gruppo<br><br>
+                <strong>Funzione rituale:</strong> Probabilmente utilizzate in cerimonie legate alla fertilità e ai cicli naturali`
+            },
+            distribution: {
+                title: "🌍 Diffusione Geografica",
+                content: `<img src="https://i.pinimg.com/736x/59/b3/34/59b3342ebd5e5710e2503a339063637f.jpg" alt="Mappa della diffusione delle Veneri preistoriche in Europa" class="clickable-image" style="width: 100%; max-width: 600px; height: 400px; object-fit: cover; border-radius: 10px; margin: 1rem 0; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" onclick="openFullscreen(this)" onerror="this.style.display='none';"><br>
+                <strong>Ampia distribuzione europea:</strong><br>
+                • Francia: Venere di Lespugue<br>
+                • Austria: Venere di Willendorf<br>
+                • Italia: Venere di Savignano<br>
+                • Repubblica Ceca: Venere di Dolní Věstonice<br>
+                • Russia: Venere di Kostënki<br><br>
+                <strong>Testimonianza di credenze comuni:</strong> La presenza di statuine simili in tutta Europa indica credenze e pratiche rituali condivise tra diverse popolazioni del Paleolitico<br><br>
+                <strong>Periodo di diffusione:</strong> 35.000-25.000 anni fa, durante il Paleolitico superiore`
+            }
+        };
+        
+        const megalithInfo = {
+            menhir: {
+                title: "🗿 Menhir - Pietre Verticali",
+                content: `<img src="https://www.bundan.com/wp-content/uploads/2018/06/dolmeni-anteprima.jpg" alt="Menhir e dolmen - Monumenti megalitici neolitici" class="clickable-image" style="width: 100%; max-width: 500px; height: 300px; object-fit: cover; border-radius: 10px; margin: 1rem 0; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" onclick="openFullscreen(this)" onerror="this.style.display='none';"><br>
+                <strong>Definizione:</strong> Dal bretone "men" (pietra) + "hir" (lunga) = pietra lunga<br><br>
+                <strong>Caratteristiche:</strong><br>
+                • Monoliti eretti verticalmente<br>
+                • Altezza variabile da 1 a oltre 20 metri<br>
+                • Spesso disposti in allineamenti<br>
+                • Alcuni isolati, altri in gruppi<br><br>
+                <strong>Possibili funzioni:</strong><br>
+                • Marcatori astronomici per osservazioni celesti<br>
+                • Monumenti commemorativi<br>
+                • Indicatori territoriali<br>
+                • Luoghi di culto e rituali<br><br>
+                <strong>Esempi famosi:</strong> Allineamenti di Carnac in Bretagna (Francia) con oltre 3.000 menhir`
+            },
+            dolmen: {
+                title: "⚰️ Dolmen - Tombe Megalitiche",
+                content: `<img src="https://cdn.pixabay.com/photo/2014/10/31/00/07/lanyon-quoit-510059_640.jpg" alt="Lanyon Quoit - Dolmen megalitico in Cornovaglia" class="clickable-image" style="width: 100%; max-width: 500px; height: 300px; object-fit: cover; border-radius: 10px; margin: 1rem 0; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" onclick="openFullscreen(this)" onerror="this.style.display='none';"><br>
+                <strong>Definizione:</strong> Dal bretone "taol" (tavola) + "men" (pietra) = tavola di pietra<br><br>
+                <strong>Struttura:</strong><br>
+                • Lastre orizzontali (tavole) sostenute da pilastri verticali<br>
+                • Camera funeraria coperta<br>
+                • Spesso ricoperte da tumuli di terra<br>
+                • Ingresso orientato secondo criteri astronomici<br><br>
+                <strong>Funzione funeraria:</strong><br>
+                • Tombe collettive per sepolture multiple<br>
+                • Utilizzate per generazioni<br>
+                • Simbolo di continuità familiare e sociale<br><br>
+                <strong>Esempio italiano:</strong> Dolmen di Bisceglie (Puglia) - testimonianza dell'architettura megalitica nel Sud Italia`
+            },
+            cromlech: {
+                title: "⭕ Cromlech - Cerchi di Pietre",
+                content: `<img src="https://www.artesvelata.it/wp-content/uploads/2021/05/Cromlech-di-Stonehenge-2500-1300-a.C.-Wiltshire-arte-svelata.jpg" alt="Cromlech di Stonehenge - Monumento megalitico del Neolitico (2500-1300 a.C.)" class="clickable-image" style="width: 100%; max-width: 500px; height: 300px; object-fit: cover; border-radius: 10px; margin: 1rem 0; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" onclick="openFullscreen(this)" onerror="this.style.display='none';"><br>
+                <strong>Definizione:</strong> Dal gallese "crom" (curvo) + "lech" (pietra piatta) = pietra curva<br><br>
+                <strong>Struttura:</strong><br>
+                • Cerchi o ellissi di menhir<br>
+                • Diametro variabile da pochi metri a oltre 100 metri<br>
+                • Spesso con allineamenti astronomici precisi<br>
+                • Alcuni con strutture interne complesse<br><br>
+                <strong>Possibili funzioni:</strong><br>
+                • Luoghi di culto e cerimonie religiose<br>
+                • Osservatori astronomici per calcoli temporali<br>
+                • Calendari solari e lunari monumentali<br>
+                • Centri di aggregazione sociale<br><br>
+                <strong>Il più famoso:</strong> Stonehenge in Inghilterra - capolavoro dell'architettura megalitica`
+            }
+        };
+        
+        function showAnimalInfo(animal) {
+            const info = animalInfo[animal];
+            document.getElementById('popup-content').innerHTML = `
+                <h3>${info.title}</h3>
+                <img src="${info.image}" alt="${info.title} - Pittura rupestre paleolitica" class="clickable-image" style="width: 100%; max-width: 500px; height: 300px; object-fit: cover; border-radius: 10px; margin: 1rem 0; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" onclick="openFullscreen(this)" onerror="this.style.display='none';">
+                <p>${info.content}</p>
+            `;
+            document.querySelector('.overlay').style.display = 'block';
+            document.getElementById('popup').style.display = 'block';
+        }
+        
+        function showCaveInfo(cave) {
+            const info = caveInfo[cave];
+            document.getElementById('popup-content').innerHTML = `
+                <h3>${info.title}</h3>
+                <p>${info.content}</p>
+            `;
+            document.querySelector('.overlay').style.display = 'block';
+            document.getElementById('popup').style.display = 'block';
+        }
+        
+        function showVenusInfo(type) {
+            const info = venusInfo[type];
+            document.getElementById('popup-content').innerHTML = `
+                <h3>${info.title}</h3>
+                <p>${info.content}</p>
+            `;
+            document.querySelector('.overlay').style.display = 'block';
+            document.getElementById('popup').style.display = 'block';
+        }
+        
+        function showMegalithInfo(type) {
+            const info = megalithInfo[type];
+            document.getElementById('popup-content').innerHTML = `
+                <h3>${info.title}</h3>
+                <p>${info.content}</p>
+            `;
+            document.querySelector('.overlay').style.display = 'block';
+            document.getElementById('popup').style.display = 'block';
+        }
+        
+        function showCarroInfo() {
+            document.getElementById('popup-content').innerHTML = `
+                <h3>🛞 Il Carro di Naquane</h3>
+                <img src="https://www.artesvelata.it/wp-content/uploads/2021/09/Il-carro-3200-2500-a.C.-Graffito-rupestre-arte-svelata.jpg" alt="Il Carro di Naquane - Graffito rupestre della Val Camonica (3200-2500 a.C.)" class="clickable-image" style="width: 100%; max-width: 500px; height: 300px; object-fit: cover; border-radius: 10px; margin: 1rem 0; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" onclick="openFullscreen(this)" onerror="this.style.display='none';">
+                <img src="https://www.artesvelata.it/wp-content/uploads/2021/09/Il-carro-3200-2500-a.C.-Graffito-rupestre-arte-svelata-2-1536x1095.jpg" alt="Schema grafico del Carro di Naquane - Analisi della tecnica multi-prospettica" class="clickable-image" style="width: 100%; max-width: 500px; height: 350px; object-fit: cover; border-radius: 10px; margin: 1rem 0; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" onclick="openFullscreen(this)" onerror="this.style.display='none';">
+                <p><strong>Localizzazione:</strong> Roccia 23 di Naquane, Val Camonica<br><br>
+                <strong>Descrizione:</strong> Graffito che rappresenta un veicolo a quattro ruote trainato da cavalli<br><br>
+                <strong>Tecnica artistica innovativa:</strong><br>
+                • <strong>Visione multi-prospettica:</strong> Le ruote sono rappresentate di lato per mostrarne la forma circolare<br>
+                • <strong>Il telaio è visto dall'alto</strong> per evidenziare la struttura del carro<br>
+                • Questa tecnica permette di mostrare tutti i dettagli importanti contemporaneamente<br><br>
+                <strong>Obiettivo artistico:</strong> Non riprodurre l'aspetto visivo reale, ma comunicare <strong>tutte le informazioni utili</strong> sull'oggetto rappresentato<br><br>
+                <strong>Importanza storica:</strong> Testimonia l'evoluzione tecnologica e artistica del Neolitico, quando l'arte diventa più simbolica e concettuale</p>
+            `;
+            document.querySelector('.overlay').style.display = 'block';
+            document.getElementById('popup').style.display = 'block';
+        }
+        
+        function showStonehengeInfo(type) {
+            const stonehengeDetails = {
+                temple: {
+                    title: "☀️ Stonehenge come Tempio Solare",
+                    content: `<strong>Orientamento astronomico:</strong> L'asse principale di Stonehenge è perfettamente allineato con l'alba del solstizio d'estate (21 giugno)<br><br>
+                    <strong>Funzione di calendario:</strong><br>
+                    • Il sole sorge esattamente attraverso la Heel Stone durante il solstizio<br>
+                    • Permetteva di determinare con precisione i momenti cruciali dell'anno agricolo<br>
+                    • Importante per pianificare semine e raccolti<br><br>
+                    <strong>Significato religioso:</strong> Il solstizio d'estate era probabilmente celebrato con cerimonie religiose, rendendo Stonehenge un tempio dedicato al culto solare<br><br>
+                    <strong>Precisione ingegneristica:</strong> L'allineamento è così preciso che dimostra conoscenze astronomiche avanzate da parte dei costruttori neolitici`
+                },
+                observatory: {
+                    title: "🔭 Stonehenge come Osservatorio Astronomico",
+                    content: `<strong>Computer preistorico:</strong> Stonehenge poteva funzionare come un sofisticato strumento per calcoli astronomici<br><br>
+                    <strong>Previsione delle eclissi:</strong><br>
+                    • La disposizione delle pietre permetteva di calcolare quando si sarebbero verificate eclissi solari e lunari<br>
+                    • Importante per le società agricole che dipendevano dai cicli naturali<br><br>
+                    <strong>Osservazione dei pianeti:</strong> La struttura permetteva di tracciare i movimenti di Luna, Sole e probabilmente altri corpi celesti<br><br>
+                    <strong>Conoscenze avanzate:</strong> Dimostra che le popolazioni neolitiche possedevano conoscenze astronomiche molto più sofisticate di quanto si pensasse in passato`
+                },
+                calendar: {
+                    title: "🌙 Stonehenge come Calendario Lunare",
+                    content: `<strong>Il mistero delle 30 pietre:</strong> Il cerchio esterno originariamente aveva 30 triliti (29 + 1 pietra speciale)<br><br>
+                    <strong>Ciclo lunare:</strong><br>
+                    • 29 giorni = durata media del mese lunare<br>
+                    • La pietra aggiuntiva potrebbe rappresentare il giorno extra necessario per sincronizzare il calendario<br>
+                    • Sistema ingegnoso per tenere conto delle irregolarità del ciclo lunare<br><br>
+                    <strong>Calendario perpetuo:</strong> Stonehenge funzionava come un calendario monumentale che non richiedeva manutenzione<br><br>
+                    <strong>Importanza sociale:</strong> Permetteva alla comunità di organizzare attività agricole, rituali religiosi e incontri sociali secondo i cicli naturali`
+                }
+            };
+            
+            const info = stonehengeDetails[type];
+            document.getElementById('popup-content').innerHTML = `
+                <h3>${info.title}</h3>
+                <p>${info.content}</p>
+            `;
+            document.querySelector('.overlay').style.display = 'block';
+            document.getElementById('popup').style.display = 'block';
+        }
+        
+        function closePopup() {
+            document.querySelector('.overlay').style.display = 'none';
+            document.getElementById('popup').style.display = 'none';
+        }
+        
+        function openFullscreen(img) {
+            const fullscreenViewer = document.getElementById('fullscreen-viewer');
+            const fullscreenImg = document.getElementById('fullscreen-img');
+            
+            fullscreenImg.src = img.src;
+            fullscreenImg.alt = img.alt;
+            fullscreenViewer.style.display = 'block';
+            
+            // Prevent body scrolling when fullscreen is open
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeFullscreen() {
+            document.getElementById('fullscreen-viewer').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Close fullscreen with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeFullscreen();
+            }
+        });
+        
+        // Animazione delle pitture rupestri
+        document.addEventListener('DOMContentLoaded', function() {
+            const paintings = document.querySelectorAll('.cave-painting');
+            paintings.forEach((painting, index) => {
+                setTimeout(() => {
+                    painting.style.opacity = '0.8';
+                    painting.style.transform = 'scale(1)';
+                }, index * 500);
+            });
+        });
+    </script>
+<script src="/_sdk/92570d8e491862b9.editing_sdk.js" integrity="sha512-FgTgBgZOGUl1XBrojWdmYvV2Ka+jYLWeeIrMhp1Q1xMV3FJfF+VJFjO6hw+EDGnXYa+zMZXNIP5UYLxGsdfP6g=="></script></body>
+</html>
